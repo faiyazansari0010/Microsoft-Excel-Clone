@@ -1,0 +1,124 @@
+body {
+    margin: 0px;
+}
+
+.sheet-container {
+    margin-top: 80px;
+    position: relative;
+}
+
+#column-names-container {
+    width: 1820px;
+    margin-left: 42px;
+    height: 30px;
+}
+
+#row-names-container {
+    width: 43px;
+}
+
+#row-canvas:focus {
+    outline: none;
+}
+
+#outer-cell-container {
+    position: relative;
+    bottom: 564px;
+    left: 42.2px;
+    width: 95.7%;
+    height: 562px;
+    overflow: scroll;
+}
+
+#cell-container {
+    width: 6000px;
+    height: 6000px;
+    cursor: cell;
+}
+
+.sheet-corner {
+    height: 30px;
+    width: 43px;
+    background-color: #616161;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 90%;
+}
+
+.calculatedInfo {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.calculatedInfo div {
+    margin-right: 50px;
+}
+
+.calculate-item {
+    padding: 2px;
+    border: 1px solid black;
+}
+
+#bar-graph-btn {
+    margin-left: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#line-graph-btn {
+    cursor: pointer;
+}
+
+.findNReplaceContainer {
+    display: flex;
+    margin-left: 259px;
+    margin-top: -21px;
+}
+
+#find-container {
+    margin-right: 20px;
+}
+
+#find-inputBox,
+#replace-inputBox {
+    margin-top: 3px;
+    width: 60px;
+}
+
+#find-input-container,
+#replace-input-container {
+    display: none;
+}
+
+.clear-container {
+    margin-left: 20px;
+}
+
+.graphContainer {
+    position: absolute;
+    top: 60px;
+    left: 130px;
+}
+
+.graphCanvas {
+    background-color: white;
+    width: 600px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.exitGraphIconContainer {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    display: flex;
+    margin-left: 580px;
+    cursor: pointer;
+}
+
+#demo {
+    margin-top: -543px;
+}

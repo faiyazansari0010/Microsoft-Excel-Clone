@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excel - Workbook</title>
+  <link rel="stylesheet" href="style.css">
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+  </script>
+</head>
+
+<body>
+
+  <!-- <div id="chart"><canvas id="myChart" style="width:100%;max-width:700px"></canvas></div> -->
+
+  <div class="calculatedInfo">
+    <div>
+      <span class="calculate-item">SUM</span> <p id="sum">0</p>
+    </div>
+
+    <div>
+      <span class="calculate-item">AVERAGE</span> <p id="average">0</p>
+    </div>
+
+    <div>
+      <span class="calculate-item">MINIMUM VALUE</span> <p id="minValue">0</p>
+    </div>
+
+    <div>
+      <span class="calculate-item">MAXIMUM VALUE</span> <p id="maxValue">0</p>
+    </div>
+  </div>
+
+  <div class="graph-container">
+    <button id="bar-graph-btn">Bar Graph</button>
+    <button id="line-graph-btn">Line Graph</button>
+  </div>
+
+  <div class="findNReplaceContainer">
+    <div id="find-container">
+      <button id="find-btn" style="cursor: pointer;">Find</button>
+      <div id="find-input-container" >
+        <input id="find-inputBox">
+        <img src="exitIcon.jpg" id="find-btn-exit" alt="exitIcon" style="width: 15px; cursor: pointer;">
+      </div>
+    </div>
+
+    <div id="replace-container">
+      <button id="replace-btn" style="cursor: pointer;">Replace</button>
+      <div id="replace-input-container" >
+        <input id="replace-inputBox">
+        <img src="exitIcon.jpg" id="replace-btn-exit" alt="exitIcon" style="width: 15px; cursor: pointer;">
+      </div>
+    </div>
+
+    <div class="clear-container">
+      <button id="clear-highlight-btn" style="cursor: pointer;">Clear Highlighted Cells</button>
+    </div>
+  </div>
+
+  <form id="csvForm" style="margin-top: 20px; margin-left: 30px;">
+    <input type="file" id="csvFile" name="csvFile" style="width: 190px;">
+    <button type="submit">Upload</button>
+  </form>
+
+  
+  <div class="sheet-container">
+
+    <div class="sheet-corner">
+      
+    </div>
+
+    <div id="column-names-container">
+
+      <canvas id="column-canvas" width="1820" height="30" ></canvas>
+
+    </div>
+
+    <div id="row-names-container">
+
+      <canvas id="row-canvas" width="43" height="560" ></canvas>
+      
+    </div>
+
+    <div id="outer-cell-container">
+
+      <div id="cell-container">
+
+        <canvas id="cell-canvas" width="1820" height="560" ></canvas>
+      
+      </div>
+
+    </div>
+
+  </div>
+
+  <p id="demo">demo</p>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
